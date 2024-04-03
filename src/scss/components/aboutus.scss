@@ -1,0 +1,128 @@
+// aboutus==============================================================
+.aboutus {
+  position: relative;
+  margin-bottom: 201px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 50px;
+  }
+
+  .big-block-icon-1 {
+  }
+  .big-block-icon-2 {
+    right: -212px;
+    bottom: -380px;
+
+    @media (max-width: 1050px) {
+      bottom: -300px;
+    }
+    @media (max-width: 768px) {
+      bottom: -200px;
+    }
+  }
+
+  &__title-wrap {
+    max-width: 1426px;
+    margin: 0 auto;
+    margin-bottom: 136px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__title {
+  }
+
+  &__inner {
+    max-width: 1426px;
+    margin: 0 auto;
+  }
+
+  &__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: -0.28px;
+    color: $white;
+    margin-bottom: 73px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 500px) {
+      font-size: 16px;
+    }
+  }
+
+  &__video-box {
+    max-width: 1004px;
+    height: 487px;
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: rgba($bg, 0.7);
+
+    @media (max-width: 768px) {
+      border-radius: 25px;
+    }
+
+    @media (max-width: 650px) {
+      height: 380px;
+    }
+    @media (max-width: 500px) {
+      height: 300px;
+    }
+    @media (max-width: 400px) {
+      height: 240px;
+    }
+  }
+
+  &__video {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__img-wrap {
+    position: absolute;
+    inset: 0;
+
+    &.hide {
+      display: none;
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__video-play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+
+    @media (max-width: 650px) {
+      width: 60px;
+    }
+    @media (max-width: 400px) {
+      width: 50px;
+    }
+
+    &:hover {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    &.hide {
+      display: none;
+    }
+  }
+}

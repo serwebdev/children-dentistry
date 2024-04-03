@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <nav class="menu">
+        <ul class="menu__list">
+            <li class="menu__item">
+                <a href="../services.html" class="menu__link">Услуги</a>
+            </li>
+            <li class="menu__item">
+                <a href="../gallery.html" class="menu__link">Галерея</a>
+            </li>
+            <li class="menu__item">
+                <a href="../about.html" class="menu__link">О нас</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+        <main class="main">
+            <!-- hero---------------------------------------------- -->
+            <section class="hero">
+                <div class="hero__inner">
+                    <div class="hero__content">
+                        <h1 class="hero__title">Звездные Моменты в Нашей Космической Клинике</h1>
+                        <p class="hero__text">Лучшие моменты улыбок, зафиксированные в нашей галерее. Ваш ребенок
+                            следующий!</p>
+                        <button class="hero__btn btn">Заказать консультацию</button>
+                    </div>
+                    <div class="hero__img-wrap gallery-page">
+                        <img src="img/hero-gallery.webp" alt="Космонавт" class="hero__img">
+                    </div>
+                </div>
+            </section>
+
+            <!-- gallery2------------------------------------------------ -->
+            <section class="gallery2">
+                <h2 class="gallery2__title">Поделитесь своей улыбкой, чтобы стать частью нашей космической галереи!</h2>
+                <div class="gallery-slider-container gallery-slider-container-2">
+    <div class="gallery-slider swiper">
+        <div class="gallery-slider__wrapper swiper-wrapper">
+            <div class="gallery-slider__slide swiper-slide">
+                <img src="img/gallery2-1.webp" alt="Галерея" class="gallery-slider__img">
+            </div>
+            <div class="gallery-slider__slide swiper-slide">
+                <img src="img/gallery2-2.webp" alt="Галерея" class="gallery-slider__img">
+            </div>
+            <div class="gallery-slider__slide swiper-slide">
+                <img src="img/gallery2-3.webp" alt="Галерея" class="gallery-slider__img">
+            </div>
+            <div class="gallery-slider__slide swiper-slide">
+                <img src="img/gallery2-1.webp" alt="Галерея" class="gallery-slider__img">
+            </div>
+            <div class="gallery-slider__slide swiper-slide">
+                <img src="img/gallery2-2.webp" alt="Галерея" class="gallery-slider__img">
+            </div>
+            <div class="gallery-slider__slide swiper-slide">
+                <img src="img/gallery2-3.webp" alt="Галерея" class="gallery-slider__img">
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-prev">
+        <img src="img/doctors-arrow-left.svg" alt="">
+    </div>
+    <div class="swiper-button-next">
+        <img src="img/doctors-arrow-right.svg" alt="">
+    </div>
+</div>
+                <form class="gallery2__form">
+                    <input type="text" class="gallery2__input" placeholder="Оставьте свой отзыв здесь!">
+                    <div class="gallery2__form-group">
+                        <button class="gallery2__btn btn">Загрузить фото</button>
+                        <button class="gallery2__btn btn">Оставить отзыв</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- big-block------------------------------------------ -->
+            <div class="big-block">
+                <!-- aboutus------------------------------------------------ -->
+                <section class="aboutus">
+                    <img src="img/big-block-icon.webp" alt="Иконка" class="big-block-icon-1">
+                    <img src="img/big-block-icon.webp" alt="Иконка" class="big-block-icon-2">
+                    <div class="aboutus__title-wrap">
+                        <h2 class="aboutus__title h2">Видео-презентации</h2>
+                    </div>
+                    <div class="aboutus__inner">
+                        <p class="aboutus__text"> Превратите каждый визит в стоматологию в захватывающее путешествие.
+                            Наши космические кабинеты приготовлены для приключений! Улыбки наших маленьких пациентов –
+                            это наше сокровище. Узнайте, как мы создаем приятные воспоминания для каждого ребенка.</p>
+                        <div class="aboutus__video-box">
+                            <div class="aboutus__video">
+
+                            </div>
+                            <div class="aboutus__img-wrap">
+                                <img src="img/aboutus-video.webp" alt="Кадр видео" class="aboutus__img">
+                            </div>
+                            <img src="img/doctors-arrow-right.svg" alt="Кнопка старт видео" class="aboutus__video-play">
+                        </div>
+                    </div>
+                </section>
+                <!-- reviews---------------------------------------- -->
+                <section class="reviews">
+    <h2 class="reviews__title h2">Отзывы</h2>
+    <div class="reviews__inner">
+        <div class="reviews__list">
+            <div class="reviews__item">
+                <div class="reviews__avatar-wrap">
+                    <img src="img/reviews-avatar.svg" alt="Аватарка" class="reviews__avatar">
+                </div>
+                <div class="reviews__user-box">
+                    <div class="reviews__star-list">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                    </div>
+                    <div class="reviews__username">Ucer Name</div>
+                </div>
+                <p class="reviews__text">Наша семья очень довольна посещением детской стоматологии. Врачи замечательно
+                    подошли к нашему ребенку, создав дружелюбную и безопасную атмосферу. Мы остались очень довольны
+                    профессионализмом и вниманием к деталям. Ребенок с удовольствием посещает стоматолога и не
+                    испытывает
+                    страха благодаря заботливому отношению врачей. Большое спасибо за заботу о здоровье нашего малыша!
+                </p>
+            </div>
+            <div class="reviews__item">
+                <div class="reviews__avatar-wrap">
+                    <img src="img/reviews-avatar.svg" alt="Аватарка" class="reviews__avatar">
+                </div>
+                <div class="reviews__user-box">
+                    <div class="reviews__star-list">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                    </div>
+                    <div class="reviews__username">Ucer Name</div>
+                </div>
+                <p class="reviews__text">Наша семья очень довольна посещением детской стоматологии. Врачи замечательно
+                    подошли к нашему ребенку, создав дружелюбную и безопасную атмосферу. Мы остались очень довольны
+                    профессионализмом и вниманием к деталям. Ребенок с удовольствием посещает стоматолога и не
+                    испытывает
+                    страха благодаря заботливому отношению врачей. Большое спасибо за заботу о здоровье нашего малыша!
+                </p>
+            </div>
+            <div class="reviews__item">
+                <div class="reviews__avatar-wrap">
+                    <img src="img/reviews-avatar.svg" alt="Аватарка" class="reviews__avatar">
+                </div>
+                <div class="reviews__user-box">
+                    <div class="reviews__star-list">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                    </div>
+                    <div class="reviews__username">Ucer Name</div>
+                </div>
+                <p class="reviews__text">Наша семья очень довольна посещением детской стоматологии. Врачи замечательно
+                    подошли к нашему ребенку, создав дружелюбную и безопасную атмосферу. Мы остались очень довольны
+                    профессионализмом и вниманием к деталям. Ребенок с удовольствием посещает стоматолога и не
+                    испытывает
+                    страха благодаря заботливому отношению врачей. Большое спасибо за заботу о здоровье нашего малыша!
+                </p>
+            </div>
+            <div class="reviews__item">
+                <div class="reviews__avatar-wrap">
+                    <img src="img/reviews-avatar.svg" alt="Аватарка" class="reviews__avatar">
+                </div>
+                <div class="reviews__user-box">
+                    <div class="reviews__star-list">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                    </div>
+                    <div class="reviews__username">Ucer Name</div>
+                </div>
+                <p class="reviews__text">Наша семья очень довольна посещением детской стоматологии. Врачи замечательно
+                    подошли к нашему ребенку, создав дружелюбную и безопасную атмосферу. Мы остались очень довольны
+                    профессионализмом и вниманием к деталям. Ребенок с удовольствием посещает стоматолога и не
+                    испытывает
+                    страха благодаря заботливому отношению врачей. Большое спасибо за заботу о здоровье нашего малыша!
+                </p>
+            </div>
+            <div class="reviews__item">
+                <div class="reviews__avatar-wrap">
+                    <img src="img/reviews-avatar.svg" alt="Аватарка" class="reviews__avatar">
+                </div>
+                <div class="reviews__user-box">
+                    <div class="reviews__star-list">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                        <img src="img/reviews-star.svg" alt="Звездочка" class="reviews__star">
+                    </div>
+                    <div class="reviews__username">Ucer Name</div>
+                </div>
+                <p class="reviews__text">Наша семья очень довольна посещением детской стоматологии. Врачи замечательно
+                    подошли к нашему ребенку, создав дружелюбную и безопасную атмосферу. Мы остались очень довольны
+                    профессионализмом и вниманием к деталям. Ребенок с удовольствием посещает стоматолога и не
+                    испытывает
+                    страха благодаря заботливому отношению врачей. Большое спасибо за заботу о здоровье нашего малыша!
+                </p>
+            </div>
+        </div>
+        <form class="reviews__form">
+            <input type="text" class="reviews__input" placeholder="Оставьте свой отзыв здесь!">
+            <button class="reviews__btn btn">Оставить отзыв</button>
+        </form>
+    </div>
+</section>
+            </div>
+
+            <!-- contacts-------------------------------------------------------- -->
+            <section class="contacts">
+    <div class="contacts__container">
+        <div class="contacts__inner">
+            <div class="contacts__left">
+                <h2 class="contacts__title h2">Контакты</h2>
+                <div class="contacts__phone-wrap">
+                    <a href="tel:375251234567" class="contacts__phone">+ 375 (25) 123-45-67</a>
+                    <img src="img/phone.svg" alt="Телефон" class="contacts__phone-img">
+                </div>
+                <div class="contacts__city-wrap">
+                    <div class="contacts__city">Город, Ул. Улица 11</div>
+                    <img src="img/location.svg" alt="" class="contacts__city-img">
+                </div>
+                <img src="img/pasta-kid.webp" alt="Летающий человечек" class="contacts__pasta-kid pasta-kid">
+            </div>
+            <div class="contacts__right">
+                <form class="contacts__form">
+                    <input type="tel" class="contacts__form-input" placeholder="+375 хх ххх-хх-хх">
+                    <input type="text" class="contacts__form-input" placeholder="Имя">
+                    <button class="contacts__form-btn btn">Заказать консультацию</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+        </main>
+
+        <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__left">
+            <nav class="footer-menu">
+                <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Галерея</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Услуги</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Сотрудничество</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">О нас</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="footer__text">
+                Ощество с ограниченной ответственностью «Общество» Юридический и почтовый адрес: Республика
+                Республика,<br>
+                220089г. Город, ул. ,Улица, д. 5.<br>
+                УНП123456789 Расчетный<br>
+                счет № ХХХХ ХХХХ ХХХХ ХХХХ ХХХХ 0000 0000в ОАО «Банк»<br>
+                БИК BAPBBY2XАдрес банка: г. Город, пр. Проспект, 3.<br>
+                Регистрационный номер 123456 в торговом реестре Республики Республики</p>
+        </div>
+        <div class="footer__right">
+            <div class="footer__social">
+                <a href="#" class="footer__social-item">
+                    <svg class="svg-instagram-dims">
+                        <use xlink:href="sprite.svg#instagram"></use>
+                    </svg>
+                </a>
+                <a href="#" class="footer__social-item">
+                    <svg class="svg-telegram-dims">
+                        <use xlink:href="sprite.svg#telegram"></use>
+                    </svg>
+                </a>
+                <a href="#" class="footer__social-item">
+                    <svg class="svg-viber-dims">
+                        <use xlink:href="sprite.svg#viber"></use>
+                    </svg>
+                </a>
+                <a href="#" class="footer__social-item">
+                    <svg class="svg-whatsapp-dims">
+                        <use xlink:href="sprite.svg#whatsapp"></use>
+                    </svg>
+                </a>
+            </div>
+            <buttun class="footer__btn btn">Напишите нам</buttun>
+        </div>
+    </div>
+</footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<section class="doctors">
+    <div class="doctors__container @@if(context.about){doctors__container--about}">
+        <div class="doctors__left @@if(context.about){doctors__left--about}">
+            <h2 class="doctors__title h2">Наши врачи</h2>
+            <div class="doctors__list">
+                <div class="doctors__item  @@if(context.about){doctors__item--about} active">
+                    <div class="doctors__item-name">Фамилия Имя Отчество - врач такой то категории 1</div>
+                    <p class="doctors__item-text">Медицинское учреждение премиум-класса, где Вы можете
+                        воспользоваться широким спектром самых востребованных в современной стоматологии
+                        услуг.
+                        Каждый кабинет оснащен современным оборудованием лучших мировых производителей. 1</p>
+                    <button class="doctors__item-btn btn">Записаться на консультацию</button>
+                </div>
+                <div class="doctors__item @@if(context.about){doctors__item--about}">
+                    <div class="doctors__item-name">Фамилия Имя Отчество - врач такой то категории 2</div>
+                    <p class="doctors__item-text">Медицинское учреждение премиум-класса, где Вы можете
+                        воспользоваться широким спектром самых востребованных в современной стоматологии
+                        услуг.
+                        Каждый кабинет оснащен современным оборудованием лучших мировых производителей. 2</p>
+                    <button class="doctors__item-btn btn">Записаться на консультацию</button>
+                </div>
+            </div>
+            <img src="../img/doctors-left-icon.png" alt="Зуб"
+                class="doctors__left-icon @@if(context.about){doctors__left-icon--about}">
+        </div>
+        <div class="doctors__right">
+            <div class="doctors-slider swiper">
+                <div class="doctors-slider__wrapper swiper-wrapper">
+                    <div class="doctors-slider__slide swiper-slide">
+                        <div class="doctors-slider__slide-inner">
+                            <div class="doctors-slider__img-wrap @@if(context.about){doctors-slider__img-wrap--about}">
+                                <img src="../img/doctors-slide-1.jpg" alt="Врач" class="doctors-slider__img">
+                                <img src="../img/doctors-slide-icon.png" alt="Иконка" class="doctors-slider__icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctors-slider__slide swiper-slide">
+                        <div class="doctors-slider__slide-inner">
+                            <div class="doctors-slider__img-wrap @@if(context.about){doctors-slider__img-wrap--about}">
+                                <img src="../img/doctors-slide-1.jpg" alt="Врач" class="doctors-slider__img">
+                                <img src="../img/doctors-slide-icon.png" alt="Иконка" class="doctors-slider__icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <img src="../img/doctors-arrow-left.svg" alt="">
+            </div>
+            <div class="swiper-button-next">
+                <img src="../img/doctors-arrow-right.svg" alt="">
+            </div>
+        </div>
+    </div>
+</section>

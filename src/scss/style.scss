@@ -1,0 +1,26 @@
+// Внешние файлы ======================================================
+@import '../../node_modules/swiper/swiper-bundle.min';
+
+// Из папки vendor =====================================================
+
+// Базовые стили =======================================================
+@import 'base/reset';
+@import 'base/fonts';
+@import 'base/vars';
+@import 'base/mixins';
+@import 'base/global';
+
+// Компоненты ===========================================================
+@import 'components/header';
+@import 'components/footer';
+@import 'components/doctors';
+@import 'components/gallery-slider';
+@import 'components/reviews';
+@import 'components/contacts';
+@import 'components/aboutus';
+
+// Страницы ================================================================
+@import 'pages/index';
+@import 'pages/services';
+@import 'pages/gallery';
+@import 'pages/about';

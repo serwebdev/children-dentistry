@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('partials/head.html',{title:'Главная'})
+
+<body>
+    <div class="wrapper">
+        @@include('partials/header.html')
+
+        <main class="main">
+            <!-- hero---------------------------------------------- -->
+            <section class="hero">
+                <div class="hero__inner">
+                    <div class="hero__content">
+                        <h1 class="hero__title">Детская Стоматология:<br>
+                            Звездный Уход для Ваших Улыбок!</h1>
+                        <p class="hero__text">Где Каждый Визит - Это Приключение!</p>
+                        <button class="hero__btn btn">Заказать консультацию</button>
+                    </div>
+                    <div class="hero__img-wrap">
+                        <img src="img/hero-main.png" alt="Космонавт" class="hero__img">
+                    </div>
+                </div>
+            </section>
+
+            <!-- services------------------------------------------------ -->
+            <section class="services">
+                <div class="container">
+                    <h2 class="services__title h2">Услуги</h2>
+                    <div class="services__inner">
+                        <div class="services__item">
+                            <img src="img/services-1.jpg" alt="Услуги" class="services__img">
+                            <div class="services__overlay">
+                                <p class="services__text">Медицинское учреждение премиум-класса, где Вы можете
+                                    воспользоваться широким спектром самых востребованных в современной стоматологии
+                                    услуг. Каждый кабинет оснащен современным оборудованием лучших мировых
+                                    производителей.</p>
+                                <a href="#" class="services__btn">Записаться на консультацию</a>
+                            </div>
+                            <div class="services__btn services__btn--fake">Диагностика</div>
+                        </div>
+                        <div class="services__item">
+                            <img src="img/services-2.jpg" alt="Услуги" class="services__img">
+                            <div class="services__overlay">
+                                <p class="services__text">Медицинское учреждение премиум-класса, где Вы можете
+                                    воспользоваться широким спектром самых востребованных в современной стоматологии
+                                    услуг. Каждый кабинет оснащен современным оборудованием лучших мировых
+                                    производителей.</p>
+                                <a href="#" class="services__btn">Записаться на консультацию</a>
+                            </div>
+                            <div class="services__btn services__btn--fake">Лечение во сне</div>
+                        </div>
+                        <div class="services__item">
+                            <img src="img/services-3.jpg" alt="Услуги" class="services__img">
+                            <div class="services__overlay">
+                                <p class="services__text">Медицинское учреждение премиум-класса, где Вы можете
+                                    воспользоваться широким спектром самых востребованных в современной стоматологии
+                                    услуг. Каждый кабинет оснащен современным оборудованием лучших мировых
+                                    производителей.</p>
+                                <a href="#" class="services__btn">Записаться на консультацию</a>
+                            </div>
+                            <div class="services__btn services__btn--fake">Гигиена</div>
+                        </div>
+                        <div class="services__item">
+                            <img src="img/services-4.jpg" alt="Услуги" class="services__img">
+                            <div class="services__overlay">
+                                <p class="services__text">Медицинское учреждение премиум-класса, где Вы можете
+                                    воспользоваться широким спектром самых востребованных в современной стоматологии
+                                    услуг. Каждый кабинет оснащен современным оборудованием лучших мировых
+                                    производителей.</p>
+                                <a href="#" class="services__btn">Записаться на консультацию</a>
+                            </div>
+                            <div class="services__btn services__btn--fake">Исправление прикуса</div>
+                        </div>
+                        <div class="services__item">
+                            <img src="img/services-5.jpg" alt="Услуги" class="services__img">
+                            <div class="services__overlay">
+                                <p class="services__text">Медицинское учреждение премиум-класса, где Вы можете
+                                    воспользоваться широким спектром самых востребованных в современной стоматологии
+                                    услуг. Каждый кабинет оснащен современным оборудованием лучших мировых
+                                    производителей.</p>
+                                <a href="#" class="services__btn">Записаться на консультацию</a>
+                            </div>
+                            <div class="services__btn services__btn--fake">Лечение зубов</div>
+                        </div>
+                        <div class="services__item">
+                            <img src="img/services-6.jpg" alt="Услуги" class="services__img">
+                            <div class="services__overlay">
+                                <p class="services__text">Медицинское учреждение премиум-класса, где Вы можете
+                                    воспользоваться широким спектром самых востребованных в современной стоматологии
+                                    услуг. Каждый кабинет оснащен современным оборудованием лучших мировых
+                                    производителей.</p>
+                                <a href="#" class="services__btn">Записаться на консультацию</a>
+                            </div>
+                            <div class="services__btn services__btn--fake">Хирургия</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- doctors------------------------------------------------ -->
+            @@include('partials/doctors.html')
+
+            <!-- big-block------------------------------------------ -->
+            <div class="big-block">
+                <!-- gallery------------------------------------------------ -->
+                <section class="gallery">
+                    <img src="img/big-block-icon.png" alt="Иконка" class="big-block-icon-1">
+                    <img src="img/big-block-icon.png" alt="Иконка" class="big-block-icon-2">
+                    <h2 class="gallery__title h2">Галерея</h2>
+                    @@include('partials/gallery-slider.html')
+                    <p class="gallery__text">Вдохновляющая галерея детских рисунков! Погрузитесь в мир воображения наших
+                        маленьких пациентов и насладитесь ими вместе с нами. Здесь каждый рисунок - это яркое воплощение
+                        детской фантазии и радости, которые мы ценим и поощряем.</p>
+                </section>
+                @@include('partials/reviews.html')
+            </div>
+
+            <!-- about-------------------------------------------------------- -->
+            <section class="about">
+                <div class="about__container">
+                    <div class="about__left">
+                        <h2 class="about__title h2">О нас</h2>
+                        <div class="about__phone-wrap">
+                            <a href="tel:375251234567" class="about__phone">+ 375 (25) 123-45-67</a>
+                            <img src="img/phone.svg" alt="Телефон" class="about__phone-img">
+                        </div>
+                        <div class="about__city-wrap">
+                            <div class="about__city">Город, Ул. Улица 11</div>
+                            <img src="img/location.svg" alt="" class="about__city-img">
+                        </div>
+                        <button class="about__btn btn">Заказать консультацию</button>
+                        <img src="img/pasta-kid.png" alt="Летающий человечек" class="about__pasta-kid pasta-kid">
+                    </div>
+                    <div class="about__right">
+                        <div class="about__building">
+                            <img src="img/about-building.jpg" alt="Здание" class="about__building-img">
+                            <img src="img/about-map.jpg" alt="Карта" class="about__map-img">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        @@include('partials/footer.html')
+    </div>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

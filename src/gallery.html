@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('partials/head.html',{title:'Галерея'})
+
+<body>
+    <div class="wrapper">
+        @@include('partials/header.html')
+
+        <main class="main">
+            <!-- hero---------------------------------------------- -->
+            <section class="hero">
+                <div class="hero__inner">
+                    <div class="hero__content">
+                        <h1 class="hero__title">Звездные Моменты в Нашей Космической Клинике</h1>
+                        <p class="hero__text">Лучшие моменты улыбок, зафиксированные в нашей галерее. Ваш ребенок
+                            следующий!</p>
+                        <button class="hero__btn btn">Заказать консультацию</button>
+                    </div>
+                    <div class="hero__img-wrap gallery-page">
+                        <img src="img/hero-gallery.png" alt="Космонавт" class="hero__img">
+                    </div>
+                </div>
+            </section>
+
+            <!-- gallery2------------------------------------------------ -->
+            <section class="gallery2">
+                <h2 class="gallery2__title">Поделитесь своей улыбкой, чтобы стать частью нашей космической галереи!</h2>
+                @@include('partials/gallery-slider-2.html')
+                <form class="gallery2__form">
+                    <input type="text" class="gallery2__input" placeholder="Оставьте свой отзыв здесь!">
+                    <div class="gallery2__form-group">
+                        <button class="gallery2__btn btn">Загрузить фото</button>
+                        <button class="gallery2__btn btn">Оставить отзыв</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- big-block------------------------------------------ -->
+            <div class="big-block">
+                <!-- aboutus------------------------------------------------ -->
+                <section class="aboutus">
+                    <img src="img/big-block-icon.png" alt="Иконка" class="big-block-icon-1">
+                    <img src="img/big-block-icon.png" alt="Иконка" class="big-block-icon-2">
+                    <div class="aboutus__title-wrap">
+                        <h2 class="aboutus__title h2">Видео-презентации</h2>
+                    </div>
+                    <div class="aboutus__inner">
+                        <p class="aboutus__text"> Превратите каждый визит в стоматологию в захватывающее путешествие.
+                            Наши космические кабинеты приготовлены для приключений! Улыбки наших маленьких пациентов –
+                            это наше сокровище. Узнайте, как мы создаем приятные воспоминания для каждого ребенка.</p>
+                        <div class="aboutus__video-box">
+                            <div class="aboutus__video">
+
+                            </div>
+                            <div class="aboutus__img-wrap">
+                                <img src="img/aboutus-video.jpg" alt="Кадр видео" class="aboutus__img">
+                            </div>
+                            <img src="img/doctors-arrow-right.svg" alt="Кнопка старт видео" class="aboutus__video-play">
+                        </div>
+                    </div>
+                </section>
+                <!-- reviews---------------------------------------- -->
+                @@include('partials/reviews.html')
+            </div>
+
+            <!-- contacts-------------------------------------------------------- -->
+            @@include('partials/contacts.html')
+        </main>
+
+        @@include('partials/footer.html')
+    </div>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

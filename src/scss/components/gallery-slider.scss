@@ -1,0 +1,146 @@
+// gallery-slider-container======================================================
+.gallery-slider-container {
+  position: relative;
+  max-width: 1750px;
+  margin: 0 auto;
+  padding: 0 110px;
+  margin-bottom: 23px;
+
+  @media (max-width: 600px) {
+    padding: 0;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 80px;
+    height: 80px;
+    margin-top: auto;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media (max-width: 768px) {
+      width: 60px;
+      height: 60px;
+    }
+
+    @media (max-width: 600px) {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .swiper-button-prev {
+    left: 17px;
+
+    @media (max-width: 768px) {
+      left: 30px;
+    }
+  }
+  .swiper-button-next {
+    right: 17px;
+
+    @media (max-width: 768px) {
+      right: 30px;
+    }
+  }
+}
+
+// gallery-slider===================================================
+.gallery-slider {
+  max-width: 1520px;
+  padding: 193px 0;
+
+  @media (max-width: 1050px) {
+    padding: 100px 0;
+  }
+  @media (max-width: 800px) {
+    padding: 20px 0;
+  }
+
+  &__wrapper {
+  }
+
+  &__slide {
+    transition: 0.3s;
+  }
+
+  &__img {
+    border-radius: 50px;
+    // max-width: 750px;
+    // max-width: 365px;
+    max-width: 99.6%;
+
+    @media (max-width: 1050px) {
+      border-radius: 25px;
+    }
+  }
+
+  .swiper-slide-active {
+    transform: scale(2.05);
+    transform-origin: 49.5% center;
+
+    @media (max-width: 1050px) {
+      transform: scale(1);
+      transform-origin: center;
+    }
+
+    .gallery-slider__img {
+      border-radius: 25px;
+    }
+  }
+}
+
+// gallery-slider-container-2===================================================================
+.gallery-slider-container-2 {
+  max-width: 1850px;
+  margin-bottom: 0;
+
+  // position: relative;
+
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   inset: 0;
+  //   background: #052e3e;
+  //   filter: blur(100px);
+  //   z-index: -1;
+  // }
+
+  .gallery-slider {
+    padding: 293px 50px;
+    max-width: 1620px;
+
+    @media (max-width: 1550px) {
+      padding: 200px 50px;
+    }
+    @media (max-width: 1200px) {
+      padding: 193px 0;
+    }
+    @media (max-width: 1050px) {
+      padding: 50px 0;
+    }
+  }
+
+  .gallery-slider__img {
+    box-shadow: 0px 4px 50px #00c2ff;
+  }
+
+  .swiper-button-prev {
+    left: 67px;
+
+    @media (max-width: 1200px) {
+      left: 17px;
+    }
+  }
+
+  .swiper-button-next {
+    right: 67px;
+
+    @media (max-width: 1200px) {
+      right: 17px;
+    }
+  }
+}

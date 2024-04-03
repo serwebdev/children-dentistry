@@ -1,0 +1,126 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  // font-family: 'Mulish', sans-serif;
+  // font-family: 'Roboto', sans-serif;
+  // font-family: 'Inter', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  color: $white;
+  background-color: $bg;
+
+  background-image: url('../../img/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  // border-radius: 0 0 100px 100px;
+
+  // overflow-x: hidden;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1550px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+}
+
+.h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  // line-height: 1.37;
+  line-height: 1.2;
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  min-width: 493px;
+  border-bottom: 3px solid $white;
+  padding-bottom: 20px;
+  color: $white;
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
+  @media (max-width: 520px) {
+    min-width: auto;
+    display: flex;
+  }
+}
+
+.btn {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: -0.28px;
+  color: $white;
+  border: 3px solid $white;
+  border-radius: 100px;
+  padding: 20px 49px;
+  transition: 0.3s;
+  cursor: pointer;
+
+  backdrop-filter: blur(6.4px);
+
+  &:hover {
+    // box-shadow: 0 0 0 1px $white;
+    // transform: scale(1.03);
+
+    color: #5bc8f4;
+    border-color: #5bc8f4;
+  }
+}
+
+// svg-spite=======================================================
+.svg-instagram-dims {
+  width: 30px;
+  height: 31px;
+}
+.svg-telegram-dims {
+  width: 35px;
+  height: 35px;
+}
+.svg-viber-dims {
+  width: 35px;
+  height: 35px;
+}
+.svg-whatsapp-dims {
+  width: 35px;
+  height: 35px;
+}
+
+// pasta-kid==========================================================
+.pasta-kid {
+  position: absolute;
+  animation: pasta-kid-animation 2s ease-in-out alternate infinite;
+
+  @keyframes pasta-kid-animation {
+    0% {
+      transform: translateX(-50%) translateY(0px);
+    }
+    100% {
+      transform: translateX(-50%) translateY(130px);
+    }
+  }
+}

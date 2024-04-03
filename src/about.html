@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('partials/head.html',{title:'О нас'})
+
+<body>
+    <div class="wrapper">
+        @@include('partials/header.html')
+
+        <main class="main">
+            <!-- hero---------------------------------------------- -->
+            <section class="hero">
+                <div class="hero__inner">
+                    <div class="hero__content">
+                        <h1 class="hero__title">Наша Космическая Семья: Забота, Профессионализм, Веселье</h1>
+                        <p class="hero__text">Мы объединены общей миссией сделать уход о здоровье улыбок ваших детей
+                            незабвенным и беззаботным.</p>
+                        <button class="hero__btn btn">Заказать консультацию</button>
+                    </div>
+                    <div class="hero__img-wrap gallery-page">
+                        <img src="img/hero-about.png" alt="Космонавт" class="hero__img">
+                    </div>
+                </div>
+            </section>
+
+            <!-- main-doctor-------------------------------------------------------------- -->
+            <div class="main-doctor">
+                <img src="img/big-block-icon.png" alt="Иконка" class="main-doctor__icon">
+                <div class="container">
+                    <h2 class="main-doctor__title">Встречайте нашего Главного Врача – капитана корабля здоровья вашего
+                        ребенка!</h2>
+                    <div class="main-doctor__inner">
+                        <div class="main-doctor__left">
+                            <p class="main-doctor__left-text">Доктор Имя Фамилия – наш Главный Врач и капитан корабля
+                                космической стоматологии. С опытом более 15 лет в области детской стоматологии, она
+                                стала настоящим звездным пилотом в обеспечении заботы о здоровье маленьких улыбок.
+                                <br><br>
+                                Имя Фамилия обладает выдающимися достижениями в области педиатрической стоматологии,
+                                получила множество наград за вклад в развитие сферы. Ее миссия – сделать посещение
+                                стоматолога веселым и беззаботным приключением для каждого ребенка.
+                                Она верит в индивидуальный подход, где каждый маленький пациент – уникальная звезда ее
+                                космоса.
+                                <br><br>
+                                Имя Фамилия приглашает вас отправиться в увлекательное космическое путешествие по
+                                улучшению здоровья и радости улыбок вместе с ней!
+                            </p>
+                            <button class="main-doctor__btn btn">Записаться на консультацию</button>
+                        </div>
+                        <div class="main-doctor__right">
+                            <img src="img/main-doctor.jpg" alt="Главный врач" class="main-doctor__img">
+                        </div>
+                        <img src="img/tabs-services-kid-5.png" alt="Космонавт" class="main-doctor__img-kid">
+                    </div>
+                    <p class="main-doctor__text">Под руководством нашего Главного Врача, мы гарантируем вашему ребенку
+                        безопасное и веселое космическое путешествие в мире стоматологии!</p>
+                </div>
+            </div>
+
+            <!-- doctors------------------------------------------------ -->
+            @@include('partials/doctors.html',{about:true})
+
+            <!-- technology---------------------------------------------------- -->
+            <div class="technology">
+                <img src="img/big-block-icon.png" alt="Иконка" class="technology__icon">
+                <img src="img/tabs-services-kid-2.png" alt="Космонавт" class="technology__img-kid">
+                <div class="container">
+                    <h2 class="technology__title h2">Оборудование и технологии</h2>
+                    <div class="technology__inner">
+                        <p class="technology__inner-text">Детская стоматология в нашей клинике основана на передовых
+                            технологиях и современном оборудовании, которые обеспечивают комфортное и безопасное лечение
+                            для маленьких пациентов. Мы используем:</p>
+                        <div class="technology__list">
+                            <div class="technology__item">
+                                <p class="technology__item-text"><span>Инновационные стоматологические
+                                        установки:</span><br>
+                                    Наши стоматологические установки оснащены специальными детскими насадками, которые
+                                    делают процедуры максимально комфортными для детей.</p>
+                            </div>
+                            <div class="technology__item">
+                                <p class="technology__item-text"><span>Инновационные стоматологические
+                                        установки:</span><br>
+                                    Наши стоматологические установки оснащены специальными детскими насадками, которые
+                                    делают процедуры максимально комфортными для детей.</p>
+                            </div>
+                            <div class="technology__item">
+                                <p class="technology__item-text"><span>Игровая зона и позитивная атмосфера:</span><br>
+                                    Мы создали специальную игровую зону, чтобы дети чувствовали себя комфортно и
+                                    отвлеченно перед посещением врача. Наша позитивная атмосфера способствует
+                                    установлению доверительных отношений с маленькими пациентами.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="technology__text">Приходите к нам и убедитесь сами в том, как современные технологии и
+                        оборудование делают поход к стоматологу приятным и безопасным для вашего ребенка!</p>
+                    <button class="technology__btn btn">Записаться на консультацию</button>
+                </div>
+            </div>
+
+            <!-- contacts-------------------------------------------------------- -->
+            @@include('partials/contacts.html')
+        </main>
+
+        @@include('partials/footer.html')
+    </div>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
