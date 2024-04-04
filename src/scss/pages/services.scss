@@ -80,18 +80,19 @@
       font-size: 16px;
     }
 
-    &:hover {
+    &:hover:not(.active) {
       background: rgba(0, 45, 62, 0.68);
-      border: 3px solid $white;
-      font-weight: 700;
-      font-size: 35px;
+      box-shadow: 0 0 0 2px $white;
+      // border: 3px solid $white;
+      // font-weight: 700;
+      // font-size: 35px;
 
-      @media (max-width: 768px) {
-        font-size: 24px;
-      }
-      @media (max-width: 500px) {
-        font-size: 18px;
-      }
+      // @media (max-width: 768px) {
+      //   font-size: 24px;
+      // }
+      // @media (max-width: 500px) {
+      //   font-size: 18px;
+      // }
     }
 
     &.active {
@@ -455,7 +456,12 @@
       font-size: 16px;
     }
 
-    &:hover,
+    &:hover:not(.active) {
+      background: rgba(0, 45, 62, 0.68);
+      box-shadow: 0 0 0 2px $white;
+      border-radius: 50px;
+    }
+
     &.active {
       font-family: 'Inter';
       font-style: normal;

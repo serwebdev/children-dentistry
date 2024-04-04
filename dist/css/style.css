@@ -1967,11 +1967,9 @@ body {
   transition: 0.4s;
 }
 
-.tabs-services__button:hover {
+.tabs-services__button:hover:not(.active) {
   background: rgba(0, 45, 62, 0.68);
-  border: 3px solid #fff;
-  font-weight: 700;
-  font-size: 35px;
+  box-shadow: 0 0 0 2px #fff;
 }
 
 .tabs-services__button.active {
@@ -2287,7 +2285,12 @@ body {
   transition: 0.3s;
 }
 
-.tabs-price__button:hover,
+.tabs-price__button:hover:not(.active) {
+  background: rgba(0, 45, 62, 0.68);
+  box-shadow: 0 0 0 2px #fff;
+  border-radius: 50px;
+}
+
 .tabs-price__button.active {
   font-family: "Inter";
   font-style: normal;
@@ -3257,10 +3260,6 @@ body {
     font-size: 22px;
   }
 
-  .tabs-services__button:hover {
-    font-size: 24px;
-  }
-
   .tabs-services__button.active {
     font-size: 24px;
   }
@@ -3291,7 +3290,6 @@ body {
     padding: 8px 24px;
   }
 
-  .tabs-price__button:hover,
   .tabs-price__button.active {
     font-size: 24px;
   }
@@ -3495,10 +3493,6 @@ body {
     font-size: 16px;
   }
 
-  .tabs-services__button:hover {
-    font-size: 18px;
-  }
-
   .tabs-services__button.active {
     font-size: 18px;
   }
@@ -3511,7 +3505,6 @@ body {
     font-size: 16px;
   }
 
-  .tabs-price__button:hover,
   .tabs-price__button.active {
     font-size: 18px;
   }
